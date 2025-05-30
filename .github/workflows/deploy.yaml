@@ -1,0 +1,18 @@
+name: "Hola mundo"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy-codigo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull del código
+        run: echo "Hacemos el pull del codigo"
+      - name: Correr migraciones
+        run: echo "Correr migraciones"
+      - name: Generar binario
+        run: echo "Generar binario"
+      - name: Publicar versión
+        run: echo "Publicar version"
